@@ -1,0 +1,39 @@
+baseURL = "http://orhundalabasmaz.com/"
+languageCode = "en-us"
+title = "Orhun Dalabasmaz"
+theme = "lordmathis"
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "/about"
+  [[menu.header]]
+    name = "education"
+    weight = 2
+    url = "/education"
+  [[menu.header]]
+    name = "posts"
+    weight = 3
+    url = "/posts"
+  [[menu.header]]
+    name = "projects"
+    weight = 4
+    url = "/projects"
+  [[menu.header]]
+    name = "hobbies"
+    weight = 5
+    url = "/hobbies"
+
+[params]
+  Name = "Orhun Dalabasmaz"
+  HeaderUsername = "orhun"
+  HeaderHostname = "orhun"
+  About = "I'm yet another software engineer struggling with 1s and 0s for more than 10 years."
+  ProfilePicture = "images/profile3.jpg"
+  Email = "odalabasmaz@gmail.com"
+  GithubID = "odalabasmaz"
+  LinkedInID = "odalabasmaz"
+  StackExchangeID = "3253753"
+  StackOverflowID = "2743404"
+  TwitterID = "odalabasmaz"
