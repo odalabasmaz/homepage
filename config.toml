@@ -16,10 +16,10 @@ theme = "lordmathis"
     name = "posts"
     weight = 3
     url = "/posts"
-  [[menu.header]]
-    name = "projects"
-    weight = 4
-    url = "/projects"
+#  [[menu.header]]
+#    name = "projects"
+#    weight = 4
+#    url = "/projects"
   [[menu.header]]
     name = "hobbies"
     weight = 5
