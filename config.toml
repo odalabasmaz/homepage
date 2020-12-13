@@ -1,7 +1,7 @@
 baseURL = "https://orhundalabasmaz.com/"
 languageCode = "en-us"
 title = "Orhun Dalabasmaz"
-theme = "lordmathis"
+theme = "lordmathisv2"
 
 [menu]
   [[menu.header]]
@@ -34,6 +34,9 @@ theme = "lordmathis"
   Email = "odalabasmaz@gmail.com"
   GithubID = "odalabasmaz"
   LinkedInID = "odalabasmaz"
-  StackExchangeID = "3253753"
+  MediumID = "odalabasmaz"
+  SpotifyID = "baivs"
+#  StackExchangeID = "3253753"
   StackOverflowID = "2743404"
   TwitterID = "odalabasmaz"
+  YoutubeID = "OrhunDalabasmaz"
