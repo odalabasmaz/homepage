@@ -11,7 +11,8 @@ aws s3 sync public s3://orhundalabasmaz.com/ \
   --profile homepage \
   --delete \
   --acl public-read \
-  --exclude *.DS_Store \
+  --exclude "*.DS_Store"
 
 echo "# cleaning up..."
 rm -rf public/
+

@@ -17,7 +17,7 @@ With the technological age we are in, technological devices are an indispensable
 ---
 ### Hacettepe University / Computer Engineering - BS @2010
 
-Senior Project: Real-Time Hand Recognition (Image Processing)
+**Senior Project:** Real-Time Hand Recognition (Image Processing)
 
 [Read the article](../files/article-hand-recognition.pdf "Real-Time Hand Recognition")
 
