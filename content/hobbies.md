@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## Music
-Playing drum and guitar.
+Playing drums and guitar.
 
 ![Drum](../images/drum.png)
 

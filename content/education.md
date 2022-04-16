@@ -4,7 +4,7 @@ date: 2020-12-12T16:23:41+03:00
 draft: false
 ---
 
-### Hacettepe University / Computer Engineering - MS @2018
+### Hacettepe University / Computer Engineering - Master of Science @2018
 
 **Thesis Topic: A Load Balancing Algorithm for Distributed Stream Processing Engines**
 
@@ -15,7 +15,7 @@ With the technological age we are in, technological devices are an indispensable
 
 
 ---
-### Hacettepe University / Computer Engineering - BS @2010
+### Hacettepe University / Computer Engineering - Bachelor of Engineering @2010
 
 **Senior Project:** Real-Time Hand Recognition (Image Processing)
 
