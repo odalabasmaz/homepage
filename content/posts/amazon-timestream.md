@@ -13,4 +13,4 @@ I just gave it a chance, but you know.
 
 And that’s how I’ve decided to build a gaming PC!
 
-[Continue reading...](https://medium.com/@odalabasmaz/building-a-gaming-pc-275b67d89064)
+[Continue reading...](https://odalabasmaz.medium.com/building-a-gaming-pc-275b67d89064)

@@ -12,6 +12,6 @@ After figuring out how much easy to build a static website with *GoHugo*, I deci
 
 Long story short, I've discovered GoHuho and its features. Then, tried out some themes and decided on [LordMathis](https://github.com/LordMathis/hugo-theme-nix/) which is a simple and minimal one.
 
-Finally, I've migrated previous blogs posted on [Medium](https://medium.com/@odalabasmaz).
+Finally, I've migrated previous blogs posted on [Medium](https://odalabasmaz.medium.com).
 
 And, here we go!

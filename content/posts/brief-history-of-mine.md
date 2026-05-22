@@ -10,4 +10,4 @@ In other words, what forces me to become so.
 
 This is a brief history of mine as a child who wanted to be a computer engineer.
 
-[Continue reading...](https://medium.com/@odalabasmaz/a-brief-history-of-mine-as-a-computer-engineer-53c4cf6d0f19)
+[Continue reading...](https://odalabasmaz.medium.com/a-brief-history-of-mine-as-a-computer-engineer-53c4cf6d0f19)

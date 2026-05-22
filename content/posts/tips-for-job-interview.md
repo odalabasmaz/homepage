@@ -13,4 +13,4 @@ I’ve been at both sides of the interview table.
 
 Thus, I want to share my experiences with you. I hope this helps you with catching your dream job!
 
-[Continue reading...](https://medium.com/@odalabasmaz/8-tips-for-job-interviews-1f238c5d935a)
+[Continue reading...](https://odalabasmaz.medium.com/8-tips-for-job-interviews-1f238c5d935a)

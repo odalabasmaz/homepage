@@ -8,4 +8,4 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 In this post, I’ll explain how to migrate our domains from GoDaddy to AWS. All processes will be completed under 15 minutes.
 
-[Continue reading...](https://medium.com/@odalabasmaz/how-to-transfer-your-domains-from-godaddy-to-amazon-route-53-1e3486beeee8)
+[Continue reading...](https://odalabasmaz.medium.com/how-to-transfer-your-domains-from-godaddy-to-amazon-route-53-1e3486beeee8)

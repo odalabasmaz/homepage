@@ -27,7 +27,7 @@ I used to play Counter Strike back in high-school.
 Then I had a long break, until last year.
 I decided to build a fresh gaming pc from scratch, and here is the all story of it, enjoy reading:
 
-[Enjoy reading!](https://medium.com/@odalabasmaz/building-a-gaming-pc-275b67d89064 "Building a Gaming PC")
+[Enjoy reading!](https://odalabasmaz.medium.com/building-a-gaming-pc-275b67d89064 "Building a Gaming PC")
 
 ![Gaming PC](../images/gaming-pc.png)
 

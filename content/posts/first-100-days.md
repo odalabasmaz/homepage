@@ -6,4 +6,4 @@ draft: false
 
 I’ve spent a hundred days at OpsGenie, and I will mention my adventures in this blog post.
 
-[Continue reading...](https://medium.com/@odalabasmaz/first-100-days-at-opsgenie-be47a411e25f)
+[Continue reading...](https://odalabasmaz.medium.com/first-100-days-at-opsgenie-be47a411e25f)
