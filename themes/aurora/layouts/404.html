@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+
+<div class="bg-effects" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+</div>
+
+{{ partial "header.html" . }}
+
+<div class="not-found">
+  <div class="nf-code grad">404</div>
+  <h1 class="nf-title">Page not found</h1>
+  <p class="nf-text">Looks like this page got lost in the distributed system.</p>
+  <a href="{{ "/" | absLangURL }}" class="btn btn-primary">← Go Home</a>
+</div>
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+</body>
+</html>

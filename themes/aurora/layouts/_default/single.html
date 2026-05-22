@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+
+<div class="bg-effects" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+</div>
+
+{{ partial "header.html" . }}
+
+<div class="article-hero">
+  <div class="container">
+    {{ if eq .Section "posts" }}
+    <span class="article-date">{{ .Date.Format "January 2, 2006" }}</span>
+    {{ end }}
+    <h1 class="article-title">{{ .Title }}</h1>
+  </div>
+</div>
+
+<div class="article-body">
+  {{ .Content }}
+</div>
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+</body>
+</html>

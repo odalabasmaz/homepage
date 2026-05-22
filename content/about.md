@@ -5,25 +5,24 @@ draft: false
 ---
 ## What about me?
 
-I'm a senior software engineer, a husband, a football fun, a drummer, etc.
+I’m a principal software engineer, a husband, a football fan, a drummer, and a constant learner.
 
-Living in Ankara, Turkey.
+Living in Munich, Germany.
 
 After my first touch to the computer, I was programmed to be a computer engineer!
 
-Please join me reading [the brief history of mine as a child who wanted to be a computer engineer](https://medium.com/@odalabasmaz/a-brief-history-of-mine-as-a-computer-engineer-53c4cf6d0f19).
+Please join me reading [the brief history of mine as a child who wanted to be a computer engineer](https://odalabasmaz.medium.com/a-brief-history-of-mine-as-a-computer-engineer-53c4cf6d0f19).
 
 ---
 ## Summary
-I am a Senior Software Engineer working as an Engineering Manager at Atlassian. 
-I have 12+ years’ checkable work history. 
-I’m mostly interested and experienced with Java/Python, Cloud providers (AWS), Site Reliability Engineering (SRE), backend/infra systems, automations.
-For the last 4 years, I’ve also interested in engineering management, taken responsibility of managing/leading a team, helping them to grow, leading projects to succeed, etc.
-I speak English with a professional proficiency, and Turkish as a native speaker. 
+I am a Principal Software Engineer with 15+ years of industry experience.
+My focus areas are distributed systems, Site Reliability Engineering (SRE), cloud infrastructure (AWS), backend systems, and engineering leadership.
+I’ve led and grown engineering teams, driven architectural decisions, and owned systems that millions of users depend on.
+I speak English at professional proficiency and Turkish as a native speaker.
 
 
 ## Technical View
-* Senior Software Engineer (12+ years)
+* Principal Software Engineer (15+ years)
 * AWS Community Builder
 * AWS Certified Solutions Architect
 * Oracle Certified Professional Java Developer

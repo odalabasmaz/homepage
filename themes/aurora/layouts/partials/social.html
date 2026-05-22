@@ -1,0 +1,35 @@
+{{ with .Site.Params.GithubID }}
+<a href="https://github.com/{{ . }}" class="social-btn" title="GitHub" target="_blank" rel="noopener me">
+  <i class="fab fa-github"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.LinkedInID }}
+<a href="https://linkedin.com/in/{{ . }}" class="social-btn" title="LinkedIn" target="_blank" rel="noopener me">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.MediumID }}
+<a href="https://{{ . }}.medium.com" class="social-btn" title="Medium" target="_blank" rel="noopener me">
+  <i class="fab fa-medium"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.TwitterID }}
+<a href="https://twitter.com/{{ . }}" class="social-btn" title="X / Twitter" target="_blank" rel="noopener me">
+  <i class="fab fa-x-twitter"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.StackOverflowID }}
+<a href="https://stackoverflow.com/users/{{ . }}" class="social-btn" title="Stack Overflow" target="_blank" rel="noopener me">
+  <i class="fab fa-stack-overflow"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.YoutubeID }}
+<a href="https://youtube.com/c/{{ . }}" class="social-btn" title="YouTube" target="_blank" rel="noopener me">
+  <i class="fab fa-youtube"></i>
+</a>
+{{ end }}
+{{ with .Site.Params.Email }}
+<a href="mailto:{{ . }}" class="social-btn" title="Email">
+  <i class="fas fa-envelope"></i>
+</a>
+{{ end }}

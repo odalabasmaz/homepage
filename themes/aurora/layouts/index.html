@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+
+<div class="bg-effects" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+</div>
+
+{{ partial "header.html" . }}
+
+<!-- ════════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+
+    {{ with .Site.Params.ProfilePicture }}
+    <div class="hero-avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img src="{{ . | relURL }}" alt="{{ $.Site.Params.Name }}" />
+    </div>
+    {{ end }}
+
+    <p class="hero-eyebrow">// principal engineer &amp; sre</p>
+
+    <h1 class="hero-name">
+      <span class="grad">{{ .Site.Params.Name }}</span>
+    </h1>
+
+    <p class="hero-role">
+      <span id="typing-text"></span><span class="typing-cursor"></span>
+    </p>
+
+    <p class="hero-desc">{{ .Site.Params.About }}</p>
+
+    <div class="hero-actions">
+      <a href="#about" class="btn btn-primary">About me</a>
+      <a href="https://odalabasmaz.medium.com" target="_blank" rel="noopener" class="btn btn-outline">
+        Read on Medium&nbsp;<i class="fas fa-arrow-up-right-from-square" style="font-size:11px"></i>
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      {{ partial "social.html" . }}
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     ABOUT
+     ════════════════════════════════════════════ -->
+<section class="sp-section" id="about">
+  <div class="container">
+
+    <div class="section-label reveal">About</div>
+    <h2 class="section-title reveal">Who I am</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a Principal Software Engineer based in Munich, Germany.
+          Over the past 15+ years, I've designed and operated production systems that serve
+          millions of users, built and grown engineering teams, and driven technical and
+          organisational decisions at scale.
+        </p>
+        <p>
+          I've been at Atlassian since 2017 — first as a Site Reliability Engineer at Opsgenie
+          (pre-acquisition), then as Engineering Manager leading the Change Management team
+          under Jira Service Management. Along the way I've worn the SRE, EM, and IC hats
+          simultaneously, which gives me an unusually wide view of what it takes to ship
+          reliable software fast.
+        </p>
+        <p>
+          I care deeply about observability, reliability, and the operational reality of systems
+          once they're in production. A good system is one that doesn't wake people up at 3am —
+          and when it does, recovers gracefully.
+        </p>
+        <div class="about-chips">
+          <span class="about-chip"><i class="fas fa-location-dot"></i> Munich, Germany</span>
+          <span class="about-chip"><i class="fas fa-briefcase"></i> Atlassian</span>
+          <span class="about-chip"><i class="fab fa-aws"></i> AWS Community Builder</span>
+        </div>
+      </div>
+
+      <div class="cred-stack reveal reveal-d2">
+        <div class="cred-card">
+          <div class="cred-icon"><i class="fab fa-aws"></i></div>
+          <div>
+            <div class="cred-label">AWS Certified Solutions Architect</div>
+            <div class="cred-sub">Amazon Web Services</div>
+          </div>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon"><i class="fab fa-java"></i></div>
+          <div>
+            <div class="cred-label">Oracle Certified Professional</div>
+            <div class="cred-sub">Java Developer</div>
+          </div>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="cred-label">MSc Computer Engineering</div>
+            <div class="cred-sub">Hacettepe University · 2018</div>
+          </div>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="cred-label">BEng Computer Engineering</div>
+            <div class="cred-sub">Hacettepe University · 2010</div>
+          </div>
+        </div>
+        <div class="cred-card">
+          <div class="cred-icon"><i class="fas fa-shield-halved"></i></div>
+          <div>
+            <div class="cred-label">15+ Years Industry Experience</div>
+            <div class="cred-sub">SRE · Backend · Engineering Leadership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     EXPERIENCE
+     ════════════════════════════════════════════ -->
+<section class="sp-section" id="experience">
+  <div class="container">
+
+    <div class="section-label reveal">Career</div>
+    <h2 class="section-title reveal">Experience</h2>
+    <p class="section-sub reveal">A track record built across startups, scale-ups, and enterprise.</p>
+
+    <div class="exp-timeline">
+
+      <!-- Atlassian -->
+      <div class="exp-card glass glass-hover reveal">
+        <div class="exp-header">
+          <span class="exp-period">2017 — Present</span>
+          <span class="exp-badge">8 years</span>
+        </div>
+        <div class="exp-company">Atlassian <span class="exp-company-prev">(prev. Opsgenie)</span></div>
+        <div class="exp-roles">
+          <span class="exp-role-chip">Engineering Manager · JSM</span>
+          <span class="exp-role-chip">SRE Manager</span>
+          <span class="exp-role-chip">Site Reliability Engineer</span>
+        </div>
+        <p class="exp-desc">
+          Started as SRE at Opsgenie, a mission-critical incident management SaaS serving enterprise
+          on-call teams worldwide. After acquisition by Atlassian in 2018, took on engineering
+          management responsibilities — leading the SRE team, then transitioning to lead the
+          Change Management product team under Jira Service Management. Responsible for
+          technical leadership, architecture decisions, delivery, hiring, and growing engineers.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">Java</span><span class="exp-tag">Kotlin</span>
+          <span class="exp-tag">Spring</span><span class="exp-tag">Python</span>
+          <span class="exp-tag">AWS</span><span class="exp-tag">EKS</span>
+          <span class="exp-tag">DynamoDB</span><span class="exp-tag">SQS/SNS</span>
+          <span class="exp-tag">Docker</span><span class="exp-tag">Microservices</span>
+          <span class="exp-tag">Bitbucket CI/CD</span>
+        </div>
+      </div>
+
+      <!-- Innova -->
+      <div class="exp-card glass glass-hover reveal reveal-d1">
+        <div class="exp-header">
+          <span class="exp-period">2013 — 2017</span>
+          <span class="exp-badge">4 years</span>
+        </div>
+        <div class="exp-company">Innova</div>
+        <div class="exp-roles">
+          <span class="exp-role-chip">Senior Software Engineer</span>
+        </div>
+        <p class="exp-desc">
+          Developed and maintained SOM (Service Order Management), a SOA platform enabling
+          enterprise systems to collaborate and integrate. Built real-time monitoring tools,
+          managed the full DevOps lifecycle, and containerised the development environment.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">Java</span><span class="exp-tag">Python</span>
+          <span class="exp-tag">Hibernate</span><span class="exp-tag">Oracle DB</span>
+          <span class="exp-tag">WebLogic</span><span class="exp-tag">BPMN</span>
+          <span class="exp-tag">Kafka</span><span class="exp-tag">Grafana</span>
+          <span class="exp-tag">InfluxDB</span><span class="exp-tag">Jenkins</span>
+        </div>
+      </div>
+
+      <!-- Cybersoft -->
+      <div class="exp-card glass glass-hover reveal reveal-d2">
+        <div class="exp-header">
+          <span class="exp-period">2010 — 2013</span>
+          <span class="exp-badge">3 years</span>
+        </div>
+        <div class="exp-company">Cybersoft</div>
+        <div class="exp-roles">
+          <span class="exp-role-chip">Software Engineer</span>
+        </div>
+        <p class="exp-desc">
+          Designed, developed, and maintained a bank-customer Legal Tracking System handling
+          debt tracking, cash proceeds, and written warnings — widely used by bank personnel
+          and attorneys. Owned the full stack from design to infra management on Linux/RHEL
+          application servers.
+        </p>
+        <div class="exp-tags">
+          <span class="exp-tag">Java</span><span class="exp-tag">JavaScript</span>
+          <span class="exp-tag">Oracle DB</span><span class="exp-tag">WebLogic</span>
+          <span class="exp-tag">RHEL</span><span class="exp-tag">BI Reports</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     TECH STACK
+     ════════════════════════════════════════════ -->
+<section class="sp-section" id="stack">
+  <div class="container">
+
+    <div class="section-label reveal">Stack</div>
+    <h2 class="section-title reveal">Technologies</h2>
+    <p class="section-sub reveal">What I build, break, and monitor at scale.</p>
+
+    <div class="stack-grid">
+
+      <div class="stack-group reveal">
+        <div class="stack-group-label">
+          <i class="fas fa-code"></i> Languages &amp; Frameworks
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag hi">Java</span>
+          <span class="stack-tag hi">Kotlin</span>
+          <span class="stack-tag hi">Python</span>
+          <span class="stack-tag">Spring Boot</span>
+          <span class="stack-tag">Hibernate</span>
+          <span class="stack-tag">Shell</span>
+        </div>
+      </div>
+
+      <div class="stack-group reveal reveal-d1">
+        <div class="stack-group-label">
+          <i class="fab fa-aws"></i> AWS Cloud
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag">EC2</span>
+          <span class="stack-tag">EKS</span>
+          <span class="stack-tag">Lambda</span>
+          <span class="stack-tag">DynamoDB</span>
+          <span class="stack-tag">S3</span>
+          <span class="stack-tag">SQS / SNS</span>
+          <span class="stack-tag">CloudFormation</span>
+          <span class="stack-tag">CloudFront</span>
+          <span class="stack-tag">Route53</span>
+          <span class="stack-tag">KMS / IAM</span>
+        </div>
+      </div>
+
+      <div class="stack-group reveal reveal-d2">
+        <div class="stack-group-label">
+          <i class="fas fa-layer-group"></i> Infrastructure
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Kubernetes</span>
+          <span class="stack-tag">Linux</span>
+          <span class="stack-tag">Jenkins</span>
+          <span class="stack-tag">Bitbucket CI/CD</span>
+          <span class="stack-tag">Kafka</span>
+          <span class="stack-tag">BPMN</span>
+        </div>
+      </div>
+
+      <div class="stack-group reveal reveal-d1">
+        <div class="stack-group-label">
+          <i class="fas fa-chart-line"></i> Observability
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag">Grafana</span>
+          <span class="stack-tag">InfluxDB</span>
+          <span class="stack-tag">Datadog</span>
+          <span class="stack-tag">Splunk</span>
+        </div>
+      </div>
+
+      <div class="stack-group reveal reveal-d2">
+        <div class="stack-group-label">
+          <i class="fas fa-database"></i> Databases
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag">DynamoDB</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Oracle DB</span>
+        </div>
+      </div>
+
+      <div class="stack-group reveal reveal-d3">
+        <div class="stack-group-label">
+          <i class="fas fa-helmet-safety"></i> Practices
+        </div>
+        <div class="stack-tags">
+          <span class="stack-tag">SRE</span>
+          <span class="stack-tag">DevOps</span>
+          <span class="stack-tag">Microservices</span>
+          <span class="stack-tag">On-Call</span>
+          <span class="stack-tag">Incident Mgmt</span>
+          <span class="stack-tag">Scalability</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     WRITING
+     ════════════════════════════════════════════ -->
+<section class="sp-section sp-section-last" id="writing">
+  <div class="container">
+
+    <div class="section-label reveal">Writing</div>
+    <h2 class="section-title reveal">I write on Medium</h2>
+
+    <div class="writing-banner reveal">
+      <div class="writing-banner-inner">
+        <div class="writing-stat">
+          <span class="writing-stat-num grad">25+</span>
+          <span class="writing-stat-label">published articles</span>
+        </div>
+        <div class="writing-divider"></div>
+        <div class="writing-topics">
+          <span class="writing-topic"><i class="fab fa-aws"></i> AWS &amp; Cloud</span>
+          <span class="writing-topic"><i class="fas fa-server"></i> SRE &amp; Backend</span>
+          <span class="writing-topic"><i class="fas fa-people-group"></i> Engineering Leadership</span>
+          <span class="writing-topic"><i class="fas fa-pen-nib"></i> Tech &amp; Personal</span>
+        </div>
+        <a href="https://odalabasmaz.medium.com" target="_blank" rel="noopener"
+           class="btn btn-primary writing-cta">
+          Read on Medium &nbsp;<i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+<script>
+  // ── Typing animation ─────────────────────────────────
+  (function () {
+    const phrases = [
+      "Principal Software Engineer",
+      "Site Reliability Engineer",
+      "AWS Certified Architect",
+      "Engineering Manager",
+      "Distributed Systems Builder"
+    ];
+    let pi = 0, ci = 0, del = false;
+    const el = document.getElementById('typing-text');
+    if (!el) return;
+    function tick() {
+      const p = phrases[pi];
+      if (del) {
+        ci--;
+        el.textContent = p.slice(0, ci);
+        if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; setTimeout(tick, 380); return; }
+        setTimeout(tick, 36);
+      } else {
+        ci++;
+        el.textContent = p.slice(0, ci);
+        if (ci === p.length) { del = true; setTimeout(tick, 2400); return; }
+        setTimeout(tick, 65);
+      }
+    }
+    setTimeout(tick, 1200);
+  })();
+
+  // ── Scroll reveal ─────────────────────────────────────
+  (function () {
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.07 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  })();
+
+  // ── Active nav section detection ─────────────────────
+  (function () {
+    const sections  = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-link[data-section]');
+    const sectionObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const match = document.querySelector(`.nav-link[data-section="${e.target.id}"]`);
+          if (match) match.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(s => sectionObs.observe(s));
+  })();
+
+  // ── Mobile nav ────────────────────────────────────────
+  (function () {
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    links.querySelectorAll('a').forEach(l =>
+      l.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      })
+    );
+  })();
+</script>
+
+</body>
+</html>
