@@ -1,29 +1,53 @@
+<button class="scroll-top" id="scroll-top" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
 <script>
-  // Scroll-reveal via IntersectionObserver
+  // Scroll-reveal
   (function () {
     const obs = new IntersectionObserver(
-      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
       { threshold: 0.08 }
     );
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
   })();
 
-  // Mobile nav toggle
+  // Mobile nav + backdrop
   (function () {
-    const toggle = document.getElementById('nav-toggle');
-    const links  = document.getElementById('nav-links');
+    const toggle   = document.getElementById('nav-toggle');
+    const links    = document.getElementById('nav-links');
+    const backdrop = document.getElementById('nav-backdrop');
     if (!toggle || !links) return;
-    toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-    links.querySelectorAll('.nav-link').forEach(l =>
-      l.addEventListener('click', () => {
-        links.classList.remove('open');
-        toggle.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      })
+
+    function openNav() {
+      links.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      if (backdrop) backdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeNav() {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (backdrop) backdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    toggle.addEventListener('click', () =>
+      links.classList.contains('open') ? closeNav() : openNav()
     );
+    if (backdrop) backdrop.addEventListener('click', closeNav);
+    links.querySelectorAll('a').forEach(l => l.addEventListener('click', closeNav));
+  })();
+
+  // Scroll-to-top
+  (function () {
+    const btn = document.getElementById('scroll-top');
+    if (!btn) return;
+    window.addEventListener('scroll', () => {
+      btn.classList.toggle('visible', window.scrollY > 500);
+    }, { passive: true });
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
 </script>

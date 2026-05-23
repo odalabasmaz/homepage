@@ -354,9 +354,10 @@
 </section>
 
 {{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
 
 <script>
-  // ── Typing animation ─────────────────────────────────
+  // Typing animation (homepage only)
   (function () {
     const phrases = [
       "Principal Software Engineer",
@@ -385,20 +386,11 @@
     setTimeout(tick, 1200);
   })();
 
-  // ── Scroll reveal ─────────────────────────────────────
+  // Active section detection (homepage only)
   (function () {
-    const obs = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.07 }
-    );
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-  })();
-
-  // ── Active nav section detection ─────────────────────
-  (function () {
-    const sections  = document.querySelectorAll('section[id]');
-    const navLinks  = document.querySelectorAll('.nav-link[data-section]');
-    const sectionObs = new IntersectionObserver(entries => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[data-section]');
+    const obs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           navLinks.forEach(l => l.classList.remove('active'));
@@ -407,26 +399,7 @@
         }
       });
     }, { rootMargin: '-40% 0px -50% 0px' });
-    sections.forEach(s => sectionObs.observe(s));
-  })();
-
-  // ── Mobile nav ────────────────────────────────────────
-  (function () {
-    const toggle = document.getElementById('nav-toggle');
-    const links  = document.getElementById('nav-links');
-    if (!toggle || !links) return;
-    toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-    links.querySelectorAll('a').forEach(l =>
-      l.addEventListener('click', () => {
-        links.classList.remove('open');
-        toggle.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      })
-    );
+    sections.forEach(s => obs.observe(s));
   })();
 </script>
 
